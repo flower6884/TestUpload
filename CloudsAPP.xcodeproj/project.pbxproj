@@ -20,6 +20,7 @@
 		82FC76221F416D8000396F76 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FC76211F416D8000396F76 /* Helper.swift */; };
 		82FC764E1F41701600396F76 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82FC762F1F416FE700396F76 /* Alamofire.framework */; };
 		82FC764F1F41702200396F76 /* Gloss.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82FC76451F416FF500396F76 /* Gloss.framework */; };
+		82FC76531F41743C00396F76 /* api.student.server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FC76521F41743C00396F76 /* api.student.server.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +139,7 @@
 		82FC76211F416D8000396F76 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		82FC76231F416FE700396F76 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = ../../CloudsApp/Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		82FC763C1F416FF500396F76 /* Gloss.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Gloss.xcodeproj; path = ../../CloudsApp/Gloss/Gloss.xcodeproj; sourceTree = "<group>"; };
+		82FC76521F41743C00396F76 /* api.student.server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = api.student.server.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 				271F4F2B1F2ED7D20089B39D /* httpbin.org.json.swift */,
 				271F4F361F2F06B00089B39D /* api.github.com.json.swift */,
 				82FC76211F416D8000396F76 /* Helper.swift */,
+				82FC76521F41743C00396F76 /* api.student.server.swift */,
 			);
 			path = CloudsAPP;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82FC76531F41743C00396F76 /* api.student.server.swift in Sources */,
 				271F4F371F2F06B00089B39D /* api.github.com.json.swift in Sources */,
 				27B555201F259ADA00A8D200 /* ViewController.swift in Sources */,
 				27F6B1661F384DA400AAA945 /* StudentDataTableViewCell.swift in Sources */,

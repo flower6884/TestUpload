@@ -14,4 +14,5 @@ class Helper   //singleton pattern 的定義
     static let sharedInstance = Helper()  
     
     var apiGithubComJsons: [ApiGithubComJsonGloss]?
+    var apiStudentServer: [ApiStudentServer]?
 }

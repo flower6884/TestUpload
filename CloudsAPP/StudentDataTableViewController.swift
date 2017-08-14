@@ -12,6 +12,8 @@ class StudentDataTableViewController: UITableViewController {
 
     var studentDatas = [StudentData]()//存放從外部取得的學生資料
     
+    var apiStudentServer = [ApiStudentServer]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,13 +27,50 @@ class StudentDataTableViewController: UITableViewController {
         navigationItem.leftBarButtonItem = editButtonItem
         
         //模擬從網路取得資料
-        loadSampleStudentDatas()
+//        loadSampleStudentDatas()
+        
+        ApiStudentServer.fetch { dataTransfer in//completion 將資料傳過來
+            self.apiStudentServer = dataTransfer//將資料放在這個類別中
+            
+            self.converApiStudentServerToStudentData()
+            
+            self.tableView.reloadData()
+            
+//            print("fetch() 完成後")
+//            
+//            print(self.helper.apiGithubComJsons as Any)
+//            
+//            print(self.apiGithubComJsonsGloss)
+        }
+        
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    private func converApiStudentServerToStudentData()
+    {
+        let count = self.apiStudentServer.count
+        
+        for i in 0..<count
+        {
+            let name = self.apiStudentServer[i].name ?? "Unknow"
+            let gender = self.apiStudentServer[i].gender ?? "Unknow"
+            let birth = self.apiStudentServer[i].birth ?? "Unknow"
+            
+//            guard let studentData = StudentData(name: name,gender: gender,birth: birth)
+//                else {
+//                fatalError("convert data error")
+//            }
+            let studentData = StudentData(name: name,gender: gender,birth: birth)
+            studentDatas.append(studentData)
+            
+        }
+    }
+    
     
     //模擬從網路取得資料
     func loadSampleStudentDatas() {
