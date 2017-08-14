@@ -42,6 +42,9 @@ extension ApiGithubComJsonGloss {
                 return
             }
             
+            var helper = Helper.sharedInstance
+            helper.apiGithubComJsons = dataTransfer
+            
             completion(dataTransfer)//執行定義好的 completion handler 將資料傳出
         }
     }

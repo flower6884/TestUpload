@@ -12,6 +12,8 @@ import Alamofire
 class ViewController: UIViewController {
     var apiGithubComJsonsGloss: [ApiGithubComJsonGloss] = []//用來放 completion 傳來的資料
     
+    var helper = Helper.sharedInstance
+    
     //UI 連結
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var genderLabel: UILabel!
@@ -65,6 +67,9 @@ class ViewController: UIViewController {
         ApiGithubComJsonGloss.fetch(){ dataTransfer in//completion 將資料傳過來
             self.apiGithubComJsonsGloss = dataTransfer//將資料放在這個類別中
             print("fetch() 完成後")
+            
+            print(self.helper.apiGithubComJsons as Any)
+            
             print(self.apiGithubComJsonsGloss)
         }
     }
