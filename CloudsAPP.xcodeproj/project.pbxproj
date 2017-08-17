@@ -17,6 +17,7 @@
 		27F6B1661F384DA400AAA945 /* StudentDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F6B1651F384DA400AAA945 /* StudentDataTableViewCell.swift */; };
 		27F6B1681F38524300AAA945 /* StudentDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F6B1671F38524300AAA945 /* StudentDataTableViewController.swift */; };
 		27F6B16A1F38530C00AAA945 /* StudentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F6B1691F38530C00AAA945 /* StudentData.swift */; };
+		824849C01F4566E500E3661B /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824849BF1F4566E500E3661B /* RatingControl.swift */; };
 		82FC76221F416D8000396F76 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FC76211F416D8000396F76 /* Helper.swift */; };
 		82FC764E1F41701600396F76 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82FC762F1F416FE700396F76 /* Alamofire.framework */; };
 		82FC764F1F41702200396F76 /* Gloss.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82FC76451F416FF500396F76 /* Gloss.framework */; };
@@ -136,6 +137,7 @@
 		27F6B1651F384DA400AAA945 /* StudentDataTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StudentDataTableViewCell.swift; path = ../StudentDataTableViewCell.swift; sourceTree = "<group>"; };
 		27F6B1671F38524300AAA945 /* StudentDataTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentDataTableViewController.swift; sourceTree = "<group>"; };
 		27F6B1691F38530C00AAA945 /* StudentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentData.swift; sourceTree = "<group>"; };
+		824849BF1F4566E500E3661B /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		82FC76211F416D8000396F76 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		82FC76231F416FE700396F76 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = ../../CloudsApp/Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		82FC763C1F416FF500396F76 /* Gloss.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Gloss.xcodeproj; path = ../../CloudsApp/Gloss/Gloss.xcodeproj; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				271F4F361F2F06B00089B39D /* api.github.com.json.swift */,
 				82FC76211F416D8000396F76 /* Helper.swift */,
 				82FC76521F41743C00396F76 /* api.student.server.swift */,
+				824849BF1F4566E500E3661B /* RatingControl.swift */,
 			);
 			path = CloudsAPP;
 			sourceTree = "<group>";
@@ -398,6 +401,7 @@
 				271F4F2C1F2ED7D20089B39D /* httpbin.org.json.swift in Sources */,
 				27F6B1681F38524300AAA945 /* StudentDataTableViewController.swift in Sources */,
 				27F6B16A1F38530C00AAA945 /* StudentData.swift in Sources */,
+				824849C01F4566E500E3661B /* RatingControl.swift in Sources */,
 				82FC76221F416D8000396F76 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

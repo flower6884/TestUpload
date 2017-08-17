@@ -68,9 +68,31 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         birthTextFileld.delegate = self
         emailTextFileld.delegate = self
         phoneTextFileld.delegate = self
-        addressTextFileld.delegate = self 
-
+        addressTextFileld.delegate = self
+        
+        //點別處可以收起鍵盤
+        let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing(_:)))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+        
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool
+    {
+        //方法一
+        view.endEditing(true)
+        //方法二
+//        nameTextFileld.resignFirstResponder()
+//        genderTextFileld.resignFirstResponder()
+//        birthTextFileld.resignFirstResponder()
+//        emailTextFileld.resignFirstResponder()
+//        phoneTextFileld.resignFirstResponder()
+//        addressTextFileld.resignFirstResponder()
+        
+        return true
+    }
+    
+    
     @IBAction func selectPhoto(_ sender: UITapGestureRecognizer)
     {
         let selectPhotoController = UIImagePickerController()
