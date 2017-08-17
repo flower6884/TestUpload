@@ -32,7 +32,7 @@ extension ApiStudentServer {
     //定義 completion handlers 來傳送資料，定義要傳送一種型態的陣列，無返回值
     //宣告 @esacping 才能將資料傳出
     static func fetch(completion: @escaping ([ApiStudentServer]) -> Void) {
-        request("http://192.168.62.25:6080/api/read_data.php").responseJSON { response in
+        request("http://192.168.62.3:6080/api/read_data.php").responseJSON { response in
             
             //用 Gloss 直接解析 JSON 陣列，並回傳到 [ApiGithubComJsonGloss] 中放到 dataTransfer 準備回傳
             guard let dataTransfer = [ApiStudentServer].from(jsonArray: response.result.value as! [JSON])

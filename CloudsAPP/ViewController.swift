@@ -9,7 +9,8 @@
 import UIKit
 import Alamofire
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate
+{
     var apiGithubComJsonsGloss: [ApiGithubComJsonGloss] = []//用來放 completion 傳來的資料
     
     var helper = Helper.sharedInstance
@@ -70,6 +71,31 @@ class ViewController: UIViewController, UITextFieldDelegate {
         addressTextFileld.delegate = self 
 
     }
+    @IBAction func selectPhoto(_ sender: UITapGestureRecognizer)
+    {
+        let selectPhotoController = UIImagePickerController()
+        selectPhotoController.sourceType = .photoLibrary
+        selectPhotoController.delegate = self
+        
+        present(selectPhotoController, animated: true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController)
+    {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any])
+    {
+        guard let selectedPhoto = info[UIImagePickerControllerOriginalImage] as? UIImage else
+        {
+            fatalError("解不出照片 - \(info)")
+        }
+        
+        bigHeadPhotoImageView.image = selectedPhoto
+        dismiss(animated: true, completion: nil)
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
