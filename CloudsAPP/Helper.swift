@@ -16,3 +16,5 @@ class Helper   //singleton pattern 的定義
     var apiGithubComJsons: [ApiGithubComJsonGloss]?
     var apiStudentServer: [ApiStudentServer]?
 }
+
+

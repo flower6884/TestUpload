@@ -25,6 +25,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		829B9A9D1F4A7B4100556465 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27B555121F259ADA00A8D200 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27B555191F259ADA00A8D200;
+			remoteInfo = CloudsAPP;
+		};
 		82FC762E1F416FE700396F76 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 82FC76231F416FE700396F76 /* Alamofire.xcodeproj */;
@@ -138,6 +145,7 @@
 		27F6B1671F38524300AAA945 /* StudentDataTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentDataTableViewController.swift; sourceTree = "<group>"; };
 		27F6B1691F38530C00AAA945 /* StudentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentData.swift; sourceTree = "<group>"; };
 		824849BF1F4566E500E3661B /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		829B9A981F4A7B4100556465 /* CloudsAPPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudsAPPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82FC76211F416D8000396F76 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		82FC76231F416FE700396F76 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = ../../CloudsApp/Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		82FC763C1F416FF500396F76 /* Gloss.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Gloss.xcodeproj; path = ../../CloudsApp/Gloss/Gloss.xcodeproj; sourceTree = "<group>"; };
@@ -151,6 +159,13 @@
 			files = (
 				82FC764E1F41701600396F76 /* Alamofire.framework in Frameworks */,
 				82FC764F1F41702200396F76 /* Gloss.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		829B9A951F4A7B4100556465 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				27B5551A1F259ADA00A8D200 /* CloudsAPP.app */,
+				829B9A981F4A7B4100556465 /* CloudsAPPTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -243,6 +259,24 @@
 			productReference = 27B5551A1F259ADA00A8D200 /* CloudsAPP.app */;
 			productType = "com.apple.product-type.application";
 		};
+		829B9A971F4A7B4100556465 /* CloudsAPPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 829B9AAE1F4A7B4100556465 /* Build configuration list for PBXNativeTarget "CloudsAPPTests" */;
+			buildPhases = (
+				829B9A941F4A7B4100556465 /* Sources */,
+				829B9A951F4A7B4100556465 /* Frameworks */,
+				829B9A961F4A7B4100556465 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				829B9A9E1F4A7B4100556465 /* PBXTargetDependency */,
+			);
+			name = CloudsAPPTests;
+			productName = CloudsAPPTests;
+			productReference = 829B9A981F4A7B4100556465 /* CloudsAPPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -257,6 +291,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 4VVNFFSJ8C;
 						ProvisioningStyle = Automatic;
+					};
+					829B9A971F4A7B4100556465 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 27B555191F259ADA00A8D200;
 					};
 				};
 			};
@@ -284,6 +323,7 @@
 			projectRoot = "";
 			targets = (
 				27B555191F259ADA00A8D200 /* CloudsAPP */,
+				829B9A971F4A7B4100556465 /* CloudsAPPTests */,
 			);
 		};
 /* End PBXProject section */
@@ -386,6 +426,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		829B9A961F4A7B4100556465 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -406,7 +453,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		829B9A941F4A7B4100556465 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		829B9A9E1F4A7B4100556465 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27B555191F259ADA00A8D200 /* CloudsAPP */;
+			targetProxy = 829B9A9D1F4A7B4100556465 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		27B555211F259ADA00A8D200 /* Main.storyboard */ = {
@@ -551,6 +613,32 @@
 			};
 			name = Release;
 		};
+		829B9A9F1F4A7B4100556465 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CloudsAPPTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.yvtc.CloudsAPPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CloudsAPP.app/CloudsAPP";
+			};
+			name = Debug;
+		};
+		829B9AA01F4A7B4100556465 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CloudsAPPTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.yvtc.CloudsAPPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CloudsAPP.app/CloudsAPP";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -571,6 +659,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		829B9AAE1F4A7B4100556465 /* Build configuration list for PBXNativeTarget "CloudsAPPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				829B9A9F1F4A7B4100556465 /* Debug */,
+				829B9AA01F4A7B4100556465 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
